@@ -11,10 +11,24 @@
         "dist/country-statistics-lib/country-statistics-lib",
         "dist/country-statistics-lib"
       ],
+      "country-statistics-aggregates-lib": [
+        "dist/country-statistics-aggregates-lib/country-statistics-aggregates-lib",
+        "dist/country-statistics-aggregates-lib"
+      ],
+      "global-statistics-aggregates-lib": [
+        "dist/global-statistics-aggregates-lib/global-statistics-aggregates-lib",
+        "dist/global-statistics-aggregates-lib"
+      ],
       "@covid19-statistics/*": ["covid-19-statistics/src/app/*"],
       "@covid19-statistics-environment/*": ["environments/*"],
       "@covid19-global-statistics-lib/*": ["global-statistics-lib/src/*"],
-      "@covid19-country-statistics-lib/*": ["country-statistics-lib/src/*"]
+      "@covid19-global-statistics-aggregates-lib/*": [
+        "global-statistics-aggregates-lib/src/*"
+      ],
+      "@covid19-country-statistics-lib/*": ["country-statistics-lib/src/*"],
+      "@covid19-country-statistics-aggregates-lib/*": [
+        "country-statistics-aggregates-lib/src/*"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

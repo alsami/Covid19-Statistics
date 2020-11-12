@@ -187,6 +187,86 @@
           }
         }
       }
+    },
+    "country-statistics-aggregates-lib": {
+      "projectType": "library",
+      "root": "projects/country-statistics-aggregates-lib",
+      "sourceRoot": "projects/country-statistics-aggregates-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/country-statistics-aggregates-lib/tsconfig.lib.json",
+            "project": "projects/country-statistics-aggregates-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/country-statistics-aggregates-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/country-statistics-aggregates-lib/src/test.ts",
+            "tsConfig": "projects/country-statistics-aggregates-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/country-statistics-aggregates-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/country-statistics-aggregates-lib/tsconfig.lib.json",
+              "projects/country-statistics-aggregates-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "global-statistics-aggregates-lib": {
+      "projectType": "library",
+      "root": "projects/global-statistics-aggregates-lib",
+      "sourceRoot": "projects/global-statistics-aggregates-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/global-statistics-aggregates-lib/tsconfig.lib.json",
+            "project": "projects/global-statistics-aggregates-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/global-statistics-aggregates-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/global-statistics-aggregates-lib/src/test.ts",
+            "tsConfig": "projects/global-statistics-aggregates-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/global-statistics-aggregates-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/global-statistics-aggregates-lib/tsconfig.lib.json",
+              "projects/global-statistics-aggregates-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "covid19-statistics",
